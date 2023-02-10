@@ -2,10 +2,12 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using AnimalShelterApi.Models;
 
-namespace CretaceousApi.Controllers
+namespace AnimalShelterApi.Controllers.v1
 {
-  [Route("api/[controller]")]
   [ApiController]
+  [Route("api/v{version:apiVersion}/[controller]")]
+  [ApiVersion("1.0")]
+
   public class AnimalsController : ControllerBase
   {
     private readonly AnimalShelterApiContext _db;
@@ -17,7 +19,7 @@ namespace CretaceousApi.Controllers
 
     // GET api/animals
     [HttpGet]
-    public async Task<List<Animal>> Get(string species, string name, int minimumAge)
+    public async Task<ActionResult<IEnumerable<Animal>>> Get(string species, string name)
     {
       IQueryable<Animal> query = _db.Animals.AsQueryable();
 
@@ -29,11 +31,6 @@ namespace CretaceousApi.Controllers
       if (name != null)
       {
         query = query.Where(entry => entry.Name == name);
-      }
-
-      if (minimumAge > 0)
-      {
-        query = query.Where(entry => entry.Age >= minimumAge);
       }
 
       return await query.ToListAsync();
