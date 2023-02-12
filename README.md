@@ -83,7 +83,7 @@ You can choose any API viewer of your choice, but the API is designed to work wi
 | ---- | ---- | ----------- |
 | name | string | Filters animals by name. |
 | species | string | Filters animals by species. |
-| age | string | Filters animals by age. |
+| age | int | Filters animals by age. |
 
 #### Responses
 
@@ -121,7 +121,7 @@ You can choose any API viewer of your choice, but the API is designed to work wi
 | ---- | ---- | ----------- |
 | name | string | Yes. Max characters (20) |
 | species | string | Yes |
-| sex | interg | Yes |
+| sex | int | Yes |
 
 
 #### Responses
@@ -141,7 +141,7 @@ You can choose any API viewer of your choice, but the API is designed to work wi
 | ---- | ---- |
 | name | string |
 | species | string |
-| age | interg |
+| age | int |
 
 Note: All parameters must be entered and match existing results, only change the parameter you wish to change.
 
