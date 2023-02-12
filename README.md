@@ -2,8 +2,8 @@
 
 #### An API for animal shelters to manage their "Pets". With full CRUD functions, it includes versioning while also allowing for querying, pagination and retrieving data with GET requests.
 
-## Authored by:
-Rafael Petrachini February 2023
+## Authored by
+Rafael Petrachini <br>February 2023
 
 ***
 
