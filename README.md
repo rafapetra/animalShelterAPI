@@ -70,8 +70,6 @@ You can choose any API viewer of your choice, but the API is designed to work wi
 ## API Documentation
 
 ### Endpoints
-<br>
-
 ---
 <br>
 
@@ -90,7 +88,6 @@ You can choose any API viewer of your choice, but the API is designed to work wi
 - 200: Returns a list of animals that match the filter criteria.
 - 404: Not found.
 <br>
-<br>
 ---     
 <br>
 
@@ -107,7 +104,6 @@ You can choose any API viewer of your choice, but the API is designed to work wi
 - 200: Returns the animal with the specified id.
 - 204: No content.
 - 404: Not found.
-<br>
 <br>
 ---
 <br>
@@ -128,7 +124,6 @@ You can choose any API viewer of your choice, but the API is designed to work wi
 
 - 201: Returns the newly created animals object.
 - 404: Not found.
-<br>
 <br>
 ---
 <br>
@@ -166,7 +161,6 @@ Note: All parameters must be entered and match existing results, only change the
 
 - 204: No content.
 - 404: Not found.
-<br>
 <br>
 ---
 <br>
